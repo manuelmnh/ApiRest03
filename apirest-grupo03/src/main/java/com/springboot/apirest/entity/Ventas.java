@@ -22,6 +22,7 @@ public class Ventas implements Serializable{
 	private int subtotal;
 	private int iva;
 	private int total;
+	
 	public long getId() {
 		return id;
 	}
