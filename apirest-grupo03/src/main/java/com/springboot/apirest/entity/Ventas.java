@@ -16,7 +16,7 @@ public class Ventas implements Serializable{
 	
 	private long id;
 	private String folio;
-	private int nCliente;
+	private Cliente nCliente;
 	private int Clave;
 	private int cantidad;
 	private int subtotal;
@@ -35,10 +35,10 @@ public class Ventas implements Serializable{
 	public void setFolio(String folio) {
 		this.folio = folio;
 	}
-	public int getnCliente() {
+	public Cliente getnCliente() {
 		return nCliente;
 	}
-	public void setnCliente(int nCliente) {
+	public void setnCliente(Cliente nCliente) {
 		this.nCliente = nCliente;
 	}
 	public int getClave() {
