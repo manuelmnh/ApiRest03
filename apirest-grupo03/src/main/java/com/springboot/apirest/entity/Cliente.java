@@ -33,7 +33,7 @@ public class Cliente implements Serializable {
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="id_venta")
 	@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
-	private Venta venta;
+	private Ventas venta;
 	
 	public long getId() {
 		return id;
