@@ -21,7 +21,7 @@ public class Ventas implements Serializable{
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
 	private String folio;
-	private Cliente nCliente;
+	private Cliente cliente;
 	private int Clave;
 	private int cantidad;
 	private int subtotal;
@@ -40,11 +40,11 @@ public class Ventas implements Serializable{
 	public void setFolio(String folio) {
 		this.folio = folio;
 	}
-	public Cliente getnClientes() {
-		return nCliente;
+	public Cliente getClientes() {
+		return cliente;
 	}
-	public void setnClientes(Cliente nCliente) {
-		this.nCliente = nCliente;
+	public void setClientes(Cliente nCliente) {
+		this.cliente = nCliente;
 	}
 	public int getClave() {
 		return Clave;
