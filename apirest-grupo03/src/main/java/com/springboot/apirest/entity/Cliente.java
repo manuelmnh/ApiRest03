@@ -95,6 +95,18 @@ public class Cliente implements Serializable {
 
 
 
+	public Ventas getVenta() {
+		return venta;
+	}
+
+
+
+	public void setVenta(Ventas venta) {
+		this.venta = venta;
+	}
+
+
+
 	/**
 	 * 
 	 */
