@@ -1,0 +1,9 @@
+insert into productos(sexo,tipo,talla,precio) values ('mujer','camiseta','XS',10);
+insert into productos(sexo,tipo,talla,precio) values ('mujer','jersey','S',20);
+insert into productos(sexo,tipo,talla,precio) values ('hombre','camiseta','L',12);
+insert into productos(sexo,tipo,talla,precio) values ('hombre','jersey','M',50);
+insert into productos(sexo,tipo,talla,precio) values ('mujer','vestido','L',25);
+insert into productos(sexo,tipo,talla,precio) values ('mujer','camiseta','XS',15);
+insert into productos(sexo,tipo,talla,precio) values ('hombre','pantalon','S',25);
+insert into productos(sexo,tipo,talla,precio) values ('mujer','camiseta','XL',30);
+insert into productos(sexo,tipo,talla,precio) values ('hombre','camiseta','M',18);
