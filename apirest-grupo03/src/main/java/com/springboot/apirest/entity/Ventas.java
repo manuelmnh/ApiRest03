@@ -3,6 +3,9 @@ package com.springboot.apirest.entity;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
@@ -14,6 +17,8 @@ public class Ventas implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
 	private String folio;
 	private Cliente nCliente;
@@ -35,10 +40,10 @@ public class Ventas implements Serializable{
 	public void setFolio(String folio) {
 		this.folio = folio;
 	}
-	public Cliente getnCliente() {
+	public Cliente getnClientes() {
 		return nCliente;
 	}
-	public void setnCliente(Cliente nCliente) {
+	public void setnClientes(Cliente nCliente) {
 		this.nCliente = nCliente;
 	}
 	public int getClave() {
