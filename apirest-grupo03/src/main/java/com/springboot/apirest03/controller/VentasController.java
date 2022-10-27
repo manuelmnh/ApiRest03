@@ -1,24 +1,15 @@
 package com.springboot.apirest03.controller;
-//package com.springboot.apirest.controller;
-//
-//import java.util.HashMap;
-//import java.util.Map;
-//
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.dao.DataAccessException;
-//import org.springframework.http.HttpStatus;
-//import org.springframework.http.ResponseEntity;
-//import org.springframework.web.bind.annotation.GetMapping;
-//import org.springframework.web.bind.annotation.RequestMapping;
-//import org.springframework.web.bind.annotation.RequestParam;
-//import org.springframework.web.bind.annotation.RestController;
-//
-//import com.springboot.apirest.entity.Cliente;
-//import com.springboot.apirest.service.VentasService;
-//
-//@RestController
-//@RequestMapping("/apirest")
-//public class ventasController {
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api")
+public class VentasController {
+	
+	
+	
+}
 //
 //	@Autowired 
 //	VentasService ventasService;
