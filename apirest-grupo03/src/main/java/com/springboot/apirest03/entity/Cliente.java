@@ -1,4 +1,4 @@
-package com.springboot.apirest.entity;
+package com.springboot.apirest03.entity;
 
 import java.io.Serializable;
 
@@ -10,12 +10,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
-@Table(name="clients")
+@Table(name="clientes")
 public class Cliente implements Serializable {
 
 	@Id
@@ -30,10 +31,7 @@ public class Cliente implements Serializable {
 	@Column(nullable=false, unique=true)
 	private Integer telefono;
 	
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="id_venta")
-	@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
-	private Ventas venta;
+
 	
 	public long getId() {
 		return id;
@@ -95,15 +93,7 @@ public class Cliente implements Serializable {
 
 
 
-	public Ventas getVenta() {
-		return venta;
-	}
 
-
-
-	public void setVenta(Ventas venta) {
-		this.venta = venta;
-	}
 
 
 
