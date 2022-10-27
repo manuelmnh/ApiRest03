@@ -3,12 +3,14 @@ package com.springboot.apirest03.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.springboot.apirest03.dao.VentasDao;
 import com.springboot.apirest03.entity.Cliente;
 import com.springboot.apirest03.entity.Venta;
 
-public class VentasServiceImpl implements VentasService{
+@Service
+public class VentaServiceImpl implements VentaService{
 
 	@Autowired
 	private VentasDao ventasDao;

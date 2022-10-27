@@ -5,7 +5,7 @@ import java.util.List;
 import com.springboot.apirest03.entity.Cliente;
 import com.springboot.apirest03.entity.Venta;
 
-public interface VentasService {
+public interface VentaService {
 
 	//metodo para buscar todos los clientes
 	public List<Venta> findVenta();
